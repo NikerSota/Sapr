@@ -1,1 +1,9 @@
 c:\users\pc\documents\visual studio 2015\Projects\Sapr\Sapr\bin\Debug\Sapr.exe.config
+C:\Projects\Sapr\Sapr\Sapr\bin\Debug\Sapr.exe.config
+C:\Projects\Sapr\Sapr\Sapr\bin\Debug\Sapr.exe
+C:\Projects\Sapr\Sapr\Sapr\bin\Debug\Sapr.pdb
+C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.csprojResolveAssemblyReference.cache
+C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.Properties.Resources.resources
+C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.csproj.GenerateResource.Cache
+C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.exe
+C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.pdb
