@@ -124,5 +124,26 @@ namespace Sapr
             }
 
         }
-    }
+
+		private void балка2ОпорыToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form ff = new Form2();
+			ff.Show();
+		}
+
+		private void цельПрограммыToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("Суть программы ");
+		}
+
+		private void инструкцияToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("Инструкция ");
+		}
+
+		private void обАвторахToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("Об авторах ");
+		}
+	}
 }
