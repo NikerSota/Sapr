@@ -22,11 +22,11 @@ namespace Sapr
         class Niker_class_raschet
         {
 
-            public double P1 = 0, P2 = 0, M1 = 0, M2 = 0, Q1 = 0, Q2 = 0; // ВЕЛЕЧИНЫ. ВВОДЯТСЯ ВРУЧНУЮ В ФОРМЕ
-            public double UP1 = 0, UP2 = 0; //УГОЛ, ВВОДИТСЯ ВРУЧНУЮ
-            public double PP1 = 0, PP2 = 0, PM1 = 0, PM2 = 0, PQ1 = 0, PQ2 = 0, PB = 0; //ПОЛОЖЕНИЕ, ВВОДИТСЯ ВРУЧНУЮ
-            public double Q, PQ; // НАХОЖДЕНИЕ РАВНОДЕЙСТВУЮЩЕЙ НАГРУЗКИ
-            public double RA, RB;  // РЕАКЦИИ ОПОР, РАСЧИТЫВАЮТСЯ В ФОРМУЛАХ
+            public float P1 = 0, P2 = 0, M1 = 0, M2 = 0, Q1 = 0, Q2 = 0; // ВЕЛЕЧИНЫ. ВВОДЯТСЯ ВРУЧНУЮ В ФОРМЕ
+            public float UP1 = 0, UP2 = 0; //УГОЛ, ВВОДИТСЯ ВРУЧНУЮ
+            public float PP1 = 0, PP2 = 0, PM1 = 0, PM2 = 0, PQ1 = 0, PQ2 = 0, PB = 0; //ПОЛОЖЕНИЕ, ВВОДИТСЯ ВРУЧНУЮ
+            public float Q, PQ; // НАХОЖДЕНИЕ РАВНОДЕЙСТВУЮЩЕЙ НАГРУЗКИ
+            public float RA, RB;  // РЕАКЦИИ ОПОР, РАСЧИТЫВАЮТСЯ В ФОРМУЛАХ
             public string otv, rat, rbt; //ОТВЕТ, ВЕКТОР А ВВЕРХ/ВНИЗБ ВЕКТОР В ВВЕРХ/ВНИЗ
             public bool RAS = false, RBS = false; // СТАТУС РЕАКЦИЙ (ЕСЛИ ЛОЖЬ - ВЕКТОР РЕАКЦИИ ВВЕРХ)
 
@@ -60,6 +60,7 @@ namespace Sapr
                 Q_raschet();
                 M1 = -M1;
                 RB = (M1 - P1 * PP1 + P2 * PP2 + Q * PQ + M2) / PB; // РАСЧЕТ РЕАКЦИИ А ПУТЕМ НАОЖДЕНИЯ СУММЫ МОМЕНТОВ
+              //RB = (10 - 15 * 2 + 15....) / 8
                 if (RB < 0)
                 {
                     RB = -RB; // ЗНАЧЕНИЕ В ПО МОДУЛЮ
@@ -127,23 +128,40 @@ namespace Sapr
         void Baka_graphic()
         {
 
-            for (int i = 0; i < 50; i++)//ЦИКЛ ПОСТРОЕНИЯ ГРАФИКА НОМЕР 1(Q)
-            {
+        //float P1X = 2, P2X = 3, Q2X = 6, RBX = 8; // ПАРАМЕТРЫ РАССТОЯНИЙ
+        //float RAY = -0.9F, P1Y = 15F, P2Y = -10F, Q1Y = 5F, Q2Y = 5F, RBY = -10.9F;// ПАРАМЕТРЫ СИЛ
+        //int[] arrow = new int[11]; // МАССИВ ДАННЫХ, ИСПОЛЬЗУЮЩИЙСЯ ДЛЯ ВВОБДА ИНФОРМАЦИИ
+        //Pen beamPen = new Pen(Color.Black, 2); // СОЗДАЕМ КИСТЬ, СТАВИМ ЦВЕТ
+        //Pen grafPen = new Pen(Color.Red, 1);  // СОЗДАЕМ КИСТЬ, СТАВИМ ЦВЕТ
+        //RAY *= 10; P1Y *= 10; P2Y *= 10; Q1Y *= 10; Q2Y *= 10; RBY *= 10;
+        //P1X *= 80; P2X *= 80; Q2X *= 80; RBX *= 80;
+        PointF[] grafQDraw = //МАССИВ ДЛЯ ПОСТРОЕНИЯ "СТРЕЛКИ" 
+    {
+            //new PointF(15F, 150F), // отправная 
+            //new PointF(15F, 150F + RAY),
+            //new PointF(15F + P1X, 150F + RAY),
+            //new PointF(15F + P1X, 150F + RAY + P1Y),
+            //new PointF(15F + P2X, 150F + RAY + P1Y),
+            //new PointF(15F + P2X, 150F + RAY + P1Y + P2Y),
+            ////new PointF(15F + Q2X, 150F),
+            //new PointF(15F + Q2X, 150F + RBY),
+            //new PointF(15F + RBX, 150F + RBY),
+            //new PointF(15F + RBX, 150F) // КОНЕЧНАЯ 
+        };
 
-                //   Graphic_Q.Series[0].Points.AddXY(i, Math.Sin(1));//ФУНКИЯ ПОСТРОЙКИ ГРАФИКА
+        //Graphics gPanel = panel1.CreateGraphics(); //СОЗДАНИЕ ГРАФИЧЕСКОГО ИНТЕРФЕЙСЯ В ЭЛЕМЕНТЕ ПАНЕЛЬ
+        //gPanel.DrawRectangle(beamPen, 0, 0, 700, 300); // РАМКА ГРАФИКА
+        //gPanel.DrawLine(beamPen, 10, 10, 10, 290); // ВЕРТИКАЛЬ
+        //gPanel.DrawLine(beamPen, 10, 150, 690, 150); // ГОРИЗОНТАЛЬ
+        //gPanel.DrawLines(grafPen, grafQDraw); // ГРАФИК КЬЮ
+        //gPanel.DrawBezier(grafPen, 20F, 20F, 40F, 60F, 60F, 40F, 100F, 100F); // ПРИМЕР КРИВОЙ
+        //Graphics gButton = button1.CreateGraphics(); //МАКРОС ДЛЯ КНОПКИ
+        ////label1.Text = "lox"; // ПРИСВОЕНИЕ ТЕКСТУ
+        ////label1.Location = { }; // ПРИСВОЕНИЕ ЛОКАЦИИ
 
-            }
+    }
 
-            for (int i = 0; i < 50; i++)//ЦИКЛ ПОСТРОЕНИЯ ГРАФИКА НОМЕР 2(М)
-            {
-
-                //   Graphic_M.Series[0].Points.AddXY(i, Math.Sin(1));//ФУНКИЯ ПОСТРОЙКИ ГРАФИКА
-
-            }
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+    private void button1_Click(object sender, EventArgs e)
         {
             Form fff = new Form3();
             fff.Show();
