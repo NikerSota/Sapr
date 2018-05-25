@@ -22,22 +22,20 @@ namespace Sapr
         class Niker_class_raschet
         {
 
-            public int P1 = 0, P2 = 0, M1 = 0,
-                       M2 = 0, Q1 = 0, Q2 = 0; // ВЕЛЕЧИНЫ. ВВОДЯТСЯ ВРУЧНУЮ В ФОРМЕ
-            public int UP1 = 0, UP2 = 0; //УГОЛ, ВВОДИТСЯ ВРУЧНУЮ
-            public int PP1 = 0, PP2 = 0, PM1 = 0,
-                       PM2 = 0, PQ1 = 0, PQ2 = 0; //ПОЛОЖЕНИЕ, ВВОДИТСЯ ВРУЧНУЮ
-            public int Q, PQ; // НАХОЖДЕНИЕ РАВНОДЕЙСТВУЮЩЕЙ НАГРУЗКИ
+            public double P1 = 0, P2 = 0, M1 = 0, M2 = 0, Q1 = 0, Q2 = 0; // ВЕЛЕЧИНЫ. ВВОДЯТСЯ ВРУЧНУЮ В ФОРМЕ
+            public double UP1 = 0, UP2 = 0; //УГОЛ, ВВОДИТСЯ ВРУЧНУЮ
+            public double PP1 = 0, PP2 = 0, PM1 = 0, PM2 = 0, PQ1 = 0, PQ2 = 0, PB = 0; //ПОЛОЖЕНИЕ, ВВОДИТСЯ ВРУЧНУЮ
+            public double Q, PQ; // НАХОЖДЕНИЕ РАВНОДЕЙСТВУЮЩЕЙ НАГРУЗКИ
             public double RA, RB;  // РЕАКЦИИ ОПОР, РАСЧИТЫВАЮТСЯ В ФОРМУЛАХ
-            public int PRA = 0, PRB = 0; //ПОЛОЖЕНИЕ ОПОР
             public string otv, rat, rbt; //ОТВЕТ, ВЕКТОР А ВВЕРХ/ВНИЗБ ВЕКТОР В ВВЕРХ/ВНИЗ
             public bool RAS = false, RBS = false; // СТАТУС РЕАКЦИЙ (ЕСЛИ ЛОЖЬ - ВЕКТОР РЕАКЦИИ ВВЕРХ)
+
             public void Q_raschet()
             {
                 if (Q1 == Q2)
                 {
                     Q = Q1 * (PQ2 - PQ1); //ДЛЯ ПРЯМОУГОЛЬНОЙ НАГРУЗКИ
-                    PQ = PQ1 + (PQ2 - PQ1); //ТОЧКА ПРИЛОЖЕНИЯ СИЛЫ
+                    PQ = PQ1 + (PQ2 - PQ1) / 2; //ТОЧКА ПРИЛОЖЕНИЯ СИЛЫ
                 }
                 else if (Q1 == 0) // ДЛЯ ПРЯМО-ТРЕУГОЛЬНОЙ ВОЗРАСТАЮЩЕЙ НАГРУЗКИ 
                 {
@@ -57,39 +55,43 @@ namespace Sapr
                 //object.Method1();
                 //}
             }
-            public double RB_raschet() // РАСЧЕТ ОПОРЫ В
+            public void RB_raschet() // РАСЧЕТ ОПОРЫ В
             {
-                RB = (M1 - P1 * PP1 + P2 * PP2 + Q * PQ * (PQ2 - PQ1) + M2) / PRB; // РАСЧЕТ РЕАКЦИИ А ПУТЕМ НАОЖДЕНИЯ СУММЫ МОМЕНТОВ
+                Q_raschet();
+                M1 = -M1;
+                RB = (M1 - P1 * PP1 + P2 * PP2 + Q * PQ + M2) / PB; // РАСЧЕТ РЕАКЦИИ А ПУТЕМ НАОЖДЕНИЯ СУММЫ МОМЕНТОВ
                 if (RB < 0)
                 {
                     RB = -RB; // ЗНАЧЕНИЕ В ПО МОДУЛЮ
                     RBS = !RBS; // ПОМЕНЯТЬ НАПРАВЛЕНИЕ ВЕКТОРА
                 }
-                return RB; //ВЫВОД ПОСЧИТАННОЙ РЕАКЦИИ В
+                //return RB; //ВЫВОД ПОСЧИТАННОЙ РЕАКЦИИ В
             }
-            public double RA_raschet() // РАСЧЕТ ОПОРЫ А
+            public void RA_raschet() // РАСЧЕТ ОПОРЫ А
             {
-                RB = RB_raschet(); // ПРИСВАИВАНИЕ РЕАКЦИИ В ПОСЧИТАННОГО ЗНАЧЕНИЯ
-                RA = -P1 + P2 + Q * PQ - RB; // РАСЧЕТ РЕАКЦИИ В ПУТЕМ НАХОЖДЕНИЯ СУМЫ ВЕРТИКАЛЬНЫХ СИЛ
+                Q_raschet();
+                RB_raschet();
+                M1 = -M1;
+                RA = -P1 + P2 + Q - RB; // РАСЧЕТ РЕАКЦИИ В ПУТЕМ НАХОЖДЕНИЯ СУМЫ ВЕРТИКАЛЬНЫХ СИЛ
                 if (RA < 0)
                 {
                     RA = -RA; // ЗНАЧЕНИЕ А ПО МОДУЛЮ
                     RAS = !RAS; // ПОМЕНЯТЬ НАПРАВЛЕНИЕ ВЕКТОРА
                 }
-                return RA; //ВЫВОД ПОСЧИТАНОЙ РЕАКЦИИ А
+                //return RA; //ВЫВОД ПОСЧИТАНОЙ РЕАКЦИИ А
             }
             public void Vektory()
             {
-                RA = RA_raschet();
-                RB = RB_raschet();
+                RA_raschet();
+
                 if (RBS == true) rbt = "Вектор RB направлен вниз";
                 else rbt = "Вектор RB направлен вверх";
                 if (RAS == true) rat = "Вектор RA направлен вниз";
                 else rat = "Вектор RA направлен вверх";
-                otv = "Вертикальная реакция опоры А = " + RA + ". " + rat + '\n' + "Вертикальная реакция опоры B = " + RB + ". " + rbt;
+                otv = "Вертикальная реакция опоры А = " + Math.Round(RA, 2) + ". " + rat + '\n' + "Вертикальная реакция опоры B = " + Math.Round(RB, 2) + ". " + rbt;
                 // Запись ответа
-                RAS = false;
-                RBS = false;
+                //RAS = false;
+                //RBS = false;
             }
         }
 
@@ -168,12 +170,16 @@ namespace Sapr
             Vivid.PM2 = (Convert.ToInt16(TXBX_M2_L.Text));
             Vivid.PQ1 = (Convert.ToInt16(TXBX_Q1_L.Text));
             Vivid.PQ2 = (Convert.ToInt16(TXBX_Q2_L.Text));
+            Vivid.PB = (Convert.ToInt16(TXBX_B_L.Text));
 
             Vivid.UP1 = (Convert.ToInt16(TXBX_P1_U.Text));
             Vivid.UP2 = (Convert.ToInt16(TXBX_P2_U.Text));
 
-            MessageBox.Show(Convert.ToString(Vivid.P2));
+            Vivid.Vektory();
+
+            MessageBox.Show(Vivid.otv);
 
         }
+
     }
 }

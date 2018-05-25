@@ -46,7 +46,6 @@
             this.TXBX_Q1_F = new System.Windows.Forms.TextBox();
             this.TXBX_Q2_F = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.TXBX_M2_L = new System.Windows.Forms.TextBox();
             this.TXBX_M1_L = new System.Windows.Forms.TextBox();
             this.TXBX_M1_F = new System.Windows.Forms.TextBox();
@@ -80,7 +79,7 @@
             this.TXBX_B_L.Name = "TXBX_B_L";
             this.TXBX_B_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_B_L.TabIndex = 4;
-            this.TXBX_B_L.Text = "0";
+            this.TXBX_B_L.Text = "8";
             // 
             // button3
             // 
@@ -127,7 +126,7 @@
             this.TXBX_P2_L.Name = "TXBX_P2_L";
             this.TXBX_P2_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_P2_L.TabIndex = 0;
-            this.TXBX_P2_L.Text = "0";
+            this.TXBX_P2_L.Text = "3";
             // 
             // TXBX_P2_U
             // 
@@ -154,7 +153,7 @@
             this.TXBX_P1_F.Name = "TXBX_P1_F";
             this.TXBX_P1_F.Size = new System.Drawing.Size(83, 22);
             this.TXBX_P1_F.TabIndex = 3;
-            this.TXBX_P1_F.Text = "0";
+            this.TXBX_P1_F.Text = "15";
             // 
             // TXBX_P1_L
             // 
@@ -163,7 +162,7 @@
             this.TXBX_P1_L.Name = "TXBX_P1_L";
             this.TXBX_P1_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_P1_L.TabIndex = 4;
-            this.TXBX_P1_L.Text = "0";
+            this.TXBX_P1_L.Text = "2";
             // 
             // TXBX_P2_F
             // 
@@ -172,7 +171,7 @@
             this.TXBX_P2_F.Name = "TXBX_P2_F";
             this.TXBX_P2_F.Size = new System.Drawing.Size(83, 22);
             this.TXBX_P2_F.TabIndex = 5;
-            this.TXBX_P2_F.Text = "0";
+            this.TXBX_P2_F.Text = "10";
             // 
             // groupBox1
             // 
@@ -201,7 +200,7 @@
             this.TXBX_Q1_L.Name = "TXBX_Q1_L";
             this.TXBX_Q1_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_Q1_L.TabIndex = 1;
-            this.TXBX_Q1_L.Text = "0";
+            this.TXBX_Q1_L.Text = "3";
             // 
             // TXBX_Q2_L
             // 
@@ -210,7 +209,7 @@
             this.TXBX_Q2_L.Name = "TXBX_Q2_L";
             this.TXBX_Q2_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_Q2_L.TabIndex = 4;
-            this.TXBX_Q2_L.Text = "0";
+            this.TXBX_Q2_L.Text = "6";
             // 
             // TXBX_Q1_F
             // 
@@ -219,7 +218,7 @@
             this.TXBX_Q1_F.Name = "TXBX_Q1_F";
             this.TXBX_Q1_F.Size = new System.Drawing.Size(83, 22);
             this.TXBX_Q1_F.TabIndex = 2;
-            this.TXBX_Q1_F.Text = "0";
+            this.TXBX_Q1_F.Text = "5";
             // 
             // TXBX_Q2_F
             // 
@@ -228,14 +227,13 @@
             this.TXBX_Q2_F.Name = "TXBX_Q2_F";
             this.TXBX_Q2_F.Size = new System.Drawing.Size(83, 22);
             this.TXBX_Q2_F.TabIndex = 3;
-            this.TXBX_Q2_F.Text = "0";
+            this.TXBX_Q2_F.Text = "5";
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox3.BackgroundImage = global::Sapr.Properties.Resources.Нагрузка_нов_1;
             this.groupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox3.Controls.Add(this.textBox1);
             this.groupBox3.Controls.Add(this.TXBX_Q2_F);
             this.groupBox3.Controls.Add(this.TXBX_Q1_F);
             this.groupBox3.Controls.Add(this.TXBX_Q2_L);
@@ -250,14 +248,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Характеристики нагрузки";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(306, 175);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "0";
-            // 
             // TXBX_M2_L
             // 
             this.TXBX_M2_L.Location = new System.Drawing.Point(220, 21);
@@ -265,7 +255,7 @@
             this.TXBX_M2_L.Name = "TXBX_M2_L";
             this.TXBX_M2_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_M2_L.TabIndex = 0;
-            this.TXBX_M2_L.Text = "0";
+            this.TXBX_M2_L.Text = "6";
             // 
             // TXBX_M1_L
             // 
@@ -283,7 +273,7 @@
             this.TXBX_M1_F.Name = "TXBX_M1_F";
             this.TXBX_M1_F.Size = new System.Drawing.Size(83, 22);
             this.TXBX_M1_F.TabIndex = 0;
-            this.TXBX_M1_F.Text = "0";
+            this.TXBX_M1_F.Text = "-10";
             // 
             // TXBX_M2_F
             // 
@@ -292,7 +282,7 @@
             this.TXBX_M2_F.Name = "TXBX_M2_F";
             this.TXBX_M2_F.Size = new System.Drawing.Size(83, 22);
             this.TXBX_M2_F.TabIndex = 3;
-            this.TXBX_M2_F.Text = "0";
+            this.TXBX_M2_F.Text = "10";
             // 
             // groupBox2
             // 
@@ -366,6 +356,5 @@
 		private System.Windows.Forms.TextBox TXBX_M2_F;
 		private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox TXBX_Q1_L;
-        public System.Windows.Forms.TextBox textBox1;
     }
 }
