@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace Sapr
 {
-	public partial class Form2 : Form
-	{
-		public Form2()
-		{
-			InitializeComponent();
-		}
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
         //public static Form2 form2 = new Form2();
 
 
         class Niker_class_raschet
-        { 
+        {
 
-            public int P1 = 0, P2 =0, M1 = 0,
+            public int P1 = 0, P2 = 0, M1 = 0,
                        M2 = 0, Q1 = 0, Q2 = 0; // ВЕЛЕЧИНЫ. ВВОДЯТСЯ ВРУЧНУЮ В ФОРМЕ
             public int UP1 = 0, UP2 = 0; //УГОЛ, ВВОДИТСЯ ВРУЧНУЮ
             public int PP1 = 0, PP2 = 0, PM1 = 0,
@@ -142,10 +142,10 @@ namespace Sapr
         }
 
         private void button1_Click(object sender, EventArgs e)
-		{
-			Form fff = new Form3();
-			fff.Show();
-		}
+        {
+            Form fff = new Form3();
+            fff.Show();
+        }
 
         private void _TextChanged(object sender, EventArgs e)
         {
@@ -155,9 +155,25 @@ namespace Sapr
         private void button3_Click(object sender, EventArgs e)
         {
             Niker_class_raschet Vivid = new Niker_class_raschet();
-            Vivid.P2=(Convert.ToInt16(TXBX_P2_F.Text));
+            Vivid.P1 = (Convert.ToInt16(TXBX_P1_F.Text));
+            Vivid.P2 = (Convert.ToInt16(TXBX_P2_F.Text));
+            Vivid.M1 = (Convert.ToInt16(TXBX_M1_F.Text));
+            Vivid.M2 = (Convert.ToInt16(TXBX_M2_F.Text));
+            Vivid.Q1 = (Convert.ToInt16(TXBX_Q1_F.Text));
+            Vivid.Q2 = (Convert.ToInt16(TXBX_Q2_F.Text));
+
+            Vivid.PP1 = (Convert.ToInt16(TXBX_P1_L.Text));
+            Vivid.PP2 = (Convert.ToInt16(TXBX_P2_L.Text));
+            Vivid.PM1 = (Convert.ToInt16(TXBX_M1_L.Text));
+            Vivid.PM2 = (Convert.ToInt16(TXBX_M2_L.Text));
+            Vivid.PQ1 = (Convert.ToInt16(TXBX_Q1_L.Text));
+            Vivid.PQ2 = (Convert.ToInt16(TXBX_Q2_L.Text));
+
+            Vivid.UP1 = (Convert.ToInt16(TXBX_P1_U.Text));
+            Vivid.UP2 = (Convert.ToInt16(TXBX_P2_U.Text));
+
             MessageBox.Show(Convert.ToString(Vivid.P2));
-            
+
         }
     }
 }
