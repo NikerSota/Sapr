@@ -80,6 +80,7 @@
             this.TXBX_B_L.Name = "TXBX_B_L";
             this.TXBX_B_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_B_L.TabIndex = 4;
+            this.TXBX_B_L.Text = "0";
             // 
             // button3
             // 
@@ -126,6 +127,7 @@
             this.TXBX_P2_L.Name = "TXBX_P2_L";
             this.TXBX_P2_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_P2_L.TabIndex = 0;
+            this.TXBX_P2_L.Text = "0";
             // 
             // TXBX_P2_U
             // 
@@ -134,6 +136,7 @@
             this.TXBX_P2_U.Name = "TXBX_P2_U";
             this.TXBX_P2_U.Size = new System.Drawing.Size(83, 22);
             this.TXBX_P2_U.TabIndex = 1;
+            this.TXBX_P2_U.Text = "0";
             // 
             // TXBX_P1_U
             // 
@@ -142,6 +145,7 @@
             this.TXBX_P1_U.Name = "TXBX_P1_U";
             this.TXBX_P1_U.Size = new System.Drawing.Size(83, 22);
             this.TXBX_P1_U.TabIndex = 2;
+            this.TXBX_P1_U.Text = "0";
             // 
             // TXBX_P1_F
             // 
@@ -150,6 +154,7 @@
             this.TXBX_P1_F.Name = "TXBX_P1_F";
             this.TXBX_P1_F.Size = new System.Drawing.Size(83, 22);
             this.TXBX_P1_F.TabIndex = 3;
+            this.TXBX_P1_F.Text = "0";
             // 
             // TXBX_P1_L
             // 
@@ -158,6 +163,7 @@
             this.TXBX_P1_L.Name = "TXBX_P1_L";
             this.TXBX_P1_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_P1_L.TabIndex = 4;
+            this.TXBX_P1_L.Text = "0";
             // 
             // TXBX_P2_F
             // 
@@ -166,6 +172,7 @@
             this.TXBX_P2_F.Name = "TXBX_P2_F";
             this.TXBX_P2_F.Size = new System.Drawing.Size(83, 22);
             this.TXBX_P2_F.TabIndex = 5;
+            this.TXBX_P2_F.Text = "0";
             // 
             // groupBox1
             // 
@@ -194,6 +201,7 @@
             this.TXBX_Q1_L.Name = "TXBX_Q1_L";
             this.TXBX_Q1_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_Q1_L.TabIndex = 1;
+            this.TXBX_Q1_L.Text = "0";
             // 
             // TXBX_Q2_L
             // 
@@ -202,6 +210,7 @@
             this.TXBX_Q2_L.Name = "TXBX_Q2_L";
             this.TXBX_Q2_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_Q2_L.TabIndex = 4;
+            this.TXBX_Q2_L.Text = "0";
             // 
             // TXBX_Q1_F
             // 
@@ -210,6 +219,7 @@
             this.TXBX_Q1_F.Name = "TXBX_Q1_F";
             this.TXBX_Q1_F.Size = new System.Drawing.Size(83, 22);
             this.TXBX_Q1_F.TabIndex = 2;
+            this.TXBX_Q1_F.Text = "0";
             // 
             // TXBX_Q2_F
             // 
@@ -218,6 +228,7 @@
             this.TXBX_Q2_F.Name = "TXBX_Q2_F";
             this.TXBX_Q2_F.Size = new System.Drawing.Size(83, 22);
             this.TXBX_Q2_F.TabIndex = 3;
+            this.TXBX_Q2_F.Text = "0";
             // 
             // groupBox3
             // 
@@ -245,6 +256,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "0";
             // 
             // TXBX_M2_L
             // 
@@ -253,6 +265,7 @@
             this.TXBX_M2_L.Name = "TXBX_M2_L";
             this.TXBX_M2_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_M2_L.TabIndex = 0;
+            this.TXBX_M2_L.Text = "0";
             // 
             // TXBX_M1_L
             // 
@@ -261,6 +274,7 @@
             this.TXBX_M1_L.Name = "TXBX_M1_L";
             this.TXBX_M1_L.Size = new System.Drawing.Size(83, 22);
             this.TXBX_M1_L.TabIndex = 1;
+            this.TXBX_M1_L.Text = "0";
             // 
             // TXBX_M1_F
             // 
@@ -269,6 +283,7 @@
             this.TXBX_M1_F.Name = "TXBX_M1_F";
             this.TXBX_M1_F.Size = new System.Drawing.Size(83, 22);
             this.TXBX_M1_F.TabIndex = 0;
+            this.TXBX_M1_F.Text = "0";
             // 
             // TXBX_M2_F
             // 
@@ -277,6 +292,7 @@
             this.TXBX_M2_F.Name = "TXBX_M2_F";
             this.TXBX_M2_F.Size = new System.Drawing.Size(83, 22);
             this.TXBX_M2_F.TabIndex = 3;
+            this.TXBX_M2_F.Text = "0";
             // 
             // groupBox2
             // 
