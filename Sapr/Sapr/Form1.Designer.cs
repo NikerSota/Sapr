@@ -36,6 +36,7 @@
 			this.цельПрограммыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.инструкцияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.обАвторахToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.калькуляторToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -53,7 +54,8 @@
 			// решениеToolStripMenuItem
 			// 
 			this.решениеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.балка2ОпорыToolStripMenuItem});
+            this.балка2ОпорыToolStripMenuItem,
+            this.калькуляторToolStripMenuItem});
 			this.решениеToolStripMenuItem.Name = "решениеToolStripMenuItem";
 			this.решениеToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
 			this.решениеToolStripMenuItem.Text = "Решение";
@@ -96,6 +98,13 @@
 			this.обАвторахToolStripMenuItem.Text = "Об авторах";
 			this.обАвторахToolStripMenuItem.Click += new System.EventHandler(this.обАвторахToolStripMenuItem_Click);
 			// 
+			// калькуляторToolStripMenuItem
+			// 
+			this.калькуляторToolStripMenuItem.Name = "калькуляторToolStripMenuItem";
+			this.калькуляторToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+			this.калькуляторToolStripMenuItem.Text = "Калькулятор";
+			this.калькуляторToolStripMenuItem.Click += new System.EventHandler(this.калькуляторToolStripMenuItem_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -108,7 +117,7 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "Form1";
-			this.Text = "Sopromat";
+			this.Text = "SupportBeam";
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
@@ -125,6 +134,7 @@
 		private System.Windows.Forms.ToolStripMenuItem цельПрограммыToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem инструкцияToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem обАвторахToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem калькуляторToolStripMenuItem;
 	}
 }
 

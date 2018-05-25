@@ -22,3 +22,4 @@ C:\Users\PC\Documents\GitHub\Sapr\Sapr\Sapr\obj\Debug\Sapr.pdb
 C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.Form1.resources
 C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.Form2.resources
 C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.Form3.resources
+C:\Users\PC\Documents\GitHub\Sapr\Sapr\Sapr\obj\Debug\Sapr.Form4.resources

@@ -40,7 +40,7 @@
 			this.ClientSize = new System.Drawing.Size(556, 388);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Form3";
-			this.Text = "График";
+			this.Text = "SupportBeam - График";
 			this.ResumeLayout(false);
 
 		}

@@ -276,7 +276,7 @@
 			this.Controls.Add(this.groupBox4);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Form2";
-			this.Text = "Решение";
+			this.Text = "SupportBeam - Решение";
 			this.groupBox4.ResumeLayout(false);
 			this.groupBox4.PerformLayout();
 			this.groupBox1.ResumeLayout(false);
