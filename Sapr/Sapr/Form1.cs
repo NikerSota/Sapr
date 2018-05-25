@@ -43,7 +43,10 @@ namespace Sapr
                 }
                 //else if (Q1 > Q2) //ПРОДОЛЖЕНИЕ ДЛЯ ТРАПЕЦЕВИДНОЙ НАГРУЗКИ
                 //{
-
+                //ClassName object = new ClassName();
+                //var object = new Classname();
+                //object.Q=COnvert.Toint16
+                //object.Method1();
                 //}
             }
             public double RB_raschet() // РАСЧЕТ ОПОРЫ В

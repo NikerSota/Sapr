@@ -19,3 +19,6 @@ C:\Users\PC\Documents\GitHub\Sapr\Sapr\Sapr\obj\Debug\Sapr.csproj.GenerateResour
 C:\Users\PC\Documents\GitHub\Sapr\Sapr\Sapr\obj\Debug\Sapr.csproj.CoreCompileInputs.cache
 C:\Users\PC\Documents\GitHub\Sapr\Sapr\Sapr\obj\Debug\Sapr.exe
 C:\Users\PC\Documents\GitHub\Sapr\Sapr\Sapr\obj\Debug\Sapr.pdb
+C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.Form1.resources
+C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.Form2.resources
+C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.Form3.resources
