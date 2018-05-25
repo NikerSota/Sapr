@@ -18,12 +18,17 @@ namespace Sapr
         }
         class Niker_class_raschet
         {
+            public int P1 = (Convert.ToInt16(TXBX_P1_F)), P2 = (Convert.ToInt16(TXBX_P2_F)), M1 = (Convert.ToInt16(TXBX_M1_F)),
+                       M2 = (Convert.ToInt16(TXBX_M2_F)), Q1 = (Convert.ToInt16(TXBX_Q1_F)), Q2 = (Convert.ToInt16(TXBX_Q2_F)); // ВЕЛЕЧИНЫ. ВВОДЯТСЯ ВРУЧНУЮ В ФОРМЕ
+            public int UP1 = (Convert.ToInt16(TXBX_P1_U)), UP2 = (Convert.ToInt16(TXBX_P2_U)); //УГОЛ, ВВОДИТЬСЯ ВРУЧНУЮ
+            public int PP1 = (Convert.ToInt16(TXBX_P1_L)), PP2 = (Convert.ToInt16(TXBX_P2_L)), PM1 = (Convert.ToInt16(TXBX_M1_L)), 
+                       PM2 = (Convert.ToInt16(TXBX_M2_L)), PQ1 = (Convert.ToInt16(TXBX_Q1_L)), PQ2 = (Convert.ToInt16(TXBX_Q2_L)); //ПОЛОЖЕНИЕ, ВВОДИТЬСЯ ВРУЧНУЮ
+            public int Q, PQ; // НАХОЖДЕНИЕ РАВНОДЕЙСТВУЮЩЕЙ НАГРУЗКИ
             public double RA, RB;  // РЕАКЦИИ ОПОР, РАСЧИТЫВАЮТСЯ В ФОРМУЛАХ
             public int PRA = 0, PRB = 0; //ПОЛОЖЕНИЕ ОПОР
-            public int P1 = 0, P2 = 0, M1 = 0, M2 = 0, Q1 = 0, Q2 = 0, Q = 0; // ВЕЛЕЧИНЫ. ВВОДЯТСЯ ВРУЧНУЮ В ФОРМЕ
-            public int PP1 = 0, PP2 = 0, PM1 = 0, PM2 = 0, PQ1 = 0, PQ2 = 0, PQ = 0; //ПОЛОЖЕНИЕ, ВВОДИТЬСЯ ВРУЧНУЮ
             public string otv, rat, rbt; //ОТВЕТ, ВЕКТОР А ВВЕРХ/ВНИЗБ ВЕКТОР В ВВЕРХ/ВНИЗ
             public bool RAS = false, RBS = false; // СТАТУС РЕАКЦИЙ (ЕСЛИ ЛОЖЬ - ВЕКТОР РЕАКЦИИ ВВЕРХ)
+
             public void Q_raschet()
             {
                 if (Q1 == Q2)
@@ -84,6 +89,10 @@ namespace Sapr
                 RBS = false;
             }
         }
+        void Niker_data()
+        {
+
+        }
         void arrowdrow() // ФУНКЦИЯ РИСОВАНИЯ БАЛКИ И СТРЕЛКИ
         {
             int XAR = 0; // ПЕРЕМЕННАЯ, ОТВЕЧАЮЩАЯ ЗА ПОЛОЖЕНИЕ СТРЕЛКИ СИЛЫ 
@@ -128,25 +137,25 @@ namespace Sapr
 
         }
 
-		private void балка2ОпорыToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			Form ff = new Form2();
-			ff.Show();
-		}
+        private void балка2ОпорыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ff = new Form2();
+            ff.Show();
+        }
 
-		private void цельПрограммыToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			MessageBox.Show("Суть программы ");
-		}
+        private void цельПрограммыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Суть программы ");
+        }
 
-		private void инструкцияToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			MessageBox.Show("Инструкция ");
-		}
+        private void инструкцияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Инструкция ");
+        }
 
-		private void обАвторахToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			MessageBox.Show("Об авторах ");
-		}
-	}
+        private void обАвторахToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Об авторах ");
+        }
+    }
 }
