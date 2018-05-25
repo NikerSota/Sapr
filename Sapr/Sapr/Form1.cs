@@ -16,6 +16,7 @@ namespace Sapr
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
         //class Niker_class_raschet
         //{
         //    public int P1 = (Convert.ToInt16(TXBX_P1_F)), P2 = (Convert.ToInt16(TXBX_P2_F)), M1 = (Convert.ToInt16(TXBX_M1_F)),
@@ -137,6 +138,9 @@ namespace Sapr
 
         }
 
+=======
+        
+>>>>>>> 49f478466f78d113636205e90395a67e6c7be5bb
         private void балка2ОпорыToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form ff = new Form2();
