@@ -73,9 +73,49 @@ namespace Sapr.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Балка_нов_1 {
+            get {
+                object obj = ResourceManager.GetObject("Балка_нов_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Без_названия__1_ {
             get {
                 object obj = ResourceManager.GetObject("Без названия (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap моменты_нов_1 {
+            get {
+                object obj = ResourceManager.GetObject("моменты_нов_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Нагрузка_нов_1 {
+            get {
+                object obj = ResourceManager.GetObject("Нагрузка_нов_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Силы_нов_1 {
+            get {
+                object obj = ResourceManager.GetObject("Силы_нов_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
