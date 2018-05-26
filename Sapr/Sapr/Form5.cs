@@ -10,17 +10,30 @@ using System.Windows.Forms;
 
 namespace Sapr
 {
-	public partial class Form5 : Form
-	{
-		public Form5()
-		{
-			InitializeComponent();
-		}
+    public partial class Form5 : Form
+    {
+        //public string otvet;
+        //public string Otvet
+        //{
+        //    get { return otvet; }
+        //    set { otvet = value; }
+        //}
+        public Form5()
+        {
+            InitializeComponent();
+        }
 
-		private void button1_Click(object sender, EventArgs e)
-		{
-			Form f6 = new Form6();
-			f6.Show();
-		}
-	}
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form f6 = new Form6();
+            f6.Show();
+
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            //textBox1.Text = f2.otvet;
+        }
+    }
 }

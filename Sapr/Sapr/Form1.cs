@@ -41,7 +41,7 @@ namespace Sapr
 		private void калькуляторToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			Form Calculator = new Form4();
-			Calculator.Show();
+			Calculator.ShowDialog();
 		}
 
 		private void Form1_Load(object sender, EventArgs e)

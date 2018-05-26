@@ -18,7 +18,7 @@ namespace Sapr
         }
         //public static Form2 form2 = new Form2();
 
-
+        public string otvet;
         class Niker_class_raschet
         {
 
@@ -31,7 +31,7 @@ namespace Sapr
             public double VA, VB;  // РЕАКЦИИ ОПОР, РАСЧИТЫВАЮТСЯ В ФОРМУЛАХ
             public string otv, VA_S_V, VB_S_V; //ОТВЕТ, ВЕКТОР А ВВЕРХ/ВНИЗБ ВЕКТОР В ВВЕРХ/ВНИЗ
             public bool VA_Z = false, VB_Z = false; // СТАТУС РЕАКЦИЙ (ЕСЛИ ЛОЖЬ - ВЕКТОР РЕАКЦИИ ВВЕРХ)
-
+            
             public void P_raschet()
             {
                 if (P1_U >= 0 && P1_U <= 90)
@@ -242,9 +242,10 @@ namespace Sapr
             Vivid.P2_U = (Convert.ToInt16(TXBX_P2_U.Text));
 
             Vivid.Vektory();
-
-           // MessageBox.Show(Vivid.otv);
-
+            otvet = Vivid.otv;
+            Form5 f5 = new Form5();
+            f5.Show();
+            f5.richTextBox1.Text = Vivid.otv;
         }
     }
 }
