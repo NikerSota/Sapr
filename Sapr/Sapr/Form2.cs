@@ -243,7 +243,7 @@ namespace Sapr
 
             Vivid.Vektory();
 
-            //MessageBox.Show(Vivid.otv);
+           // MessageBox.Show(Vivid.otv);
 
         }
     }
