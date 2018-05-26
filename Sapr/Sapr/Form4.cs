@@ -74,48 +74,51 @@ namespace Sapr
 
 		double a=0, b=0, c=0;
 		char single;
-		string o;
 		private void button14_Click(object sender, EventArgs e)
 		{
-			a = Convert.ToDouble(textBox1.Text);
-			single = '+';
-			textBox1.Clear();
+				a = Convert.ToDouble(textBox1.Text);
+				single = '+';
+				textBox1.Clear();
+
 		}
 		private void button13_Click(object sender, EventArgs e)
 		{
-			a = Convert.ToDouble(textBox1.Text);
-			single = '*';
-			textBox1.Clear();
+				a = Convert.ToDouble(textBox1.Text);
+				single = '*';
+				textBox1.Clear();
 		}
 
 		private void button12_Click(object sender, EventArgs e)
 		{
-			a = Convert.ToDouble(textBox1.Text);
-			single = '-';
-			textBox1.Clear();
+				a = Convert.ToDouble(textBox1.Text);
+				single = '-';
+				textBox1.Clear();
 		}
 		private void button11_Click(object sender, EventArgs e)
 		{
-			a = Convert.ToDouble(textBox1.Text);
-			single = '/';
-			textBox1.Clear();
+
+				a = Convert.ToDouble(textBox1.Text);
+				single = '/';
+				textBox1.Clear();
 		}
 		private void button15_Click(object sender, EventArgs e)
 		{
+
 			b = Convert.ToDouble(textBox1.Text);
-			switch(single)
+			switch (single)
 			{
 				case '+':c = a + b;
 					break;
 				case '-':c = a - b;
 					break;
-				case '*':c = a * b;
+				case '*':c = a*b;
 					break;
-				case '/':c = a / b;
-					break;
+				case '/':
+						c = a / b;
+						break;
 			}
 				textBox1.Text = c.ToString();
-
+			
 		}
 		private void button16_Click(object sender, EventArgs e)
 		{
@@ -128,7 +131,10 @@ namespace Sapr
 		}
 		private void button19_Click(object sender, EventArgs e)
 		{
-			
+			if (textBox1.Text != "")
+				if (textBox1.Text[0] == '-')
+					textBox1.Text = textBox1.Text.Remove(0, 1);
+				else textBox1.Text = '-' + textBox1.Text;
 		}
 
 	}

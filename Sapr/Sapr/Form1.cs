@@ -167,5 +167,10 @@ namespace Sapr
 			Form Calculator = new Form4();
 			Calculator.Show();
 		}
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

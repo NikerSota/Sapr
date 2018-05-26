@@ -32,11 +32,11 @@
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.решениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.балка2ОпорыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.калькуляторToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.информацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.цельПрограммыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.инструкцияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.обАвторахToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.калькуляторToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -66,6 +66,13 @@
 			this.балка2ОпорыToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
 			this.балка2ОпорыToolStripMenuItem.Text = "Балка (2 опоры)";
 			this.балка2ОпорыToolStripMenuItem.Click += new System.EventHandler(this.балка2ОпорыToolStripMenuItem_Click);
+			// 
+			// калькуляторToolStripMenuItem
+			// 
+			this.калькуляторToolStripMenuItem.Name = "калькуляторToolStripMenuItem";
+			this.калькуляторToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+			this.калькуляторToolStripMenuItem.Text = "Калькулятор";
+			this.калькуляторToolStripMenuItem.Click += new System.EventHandler(this.калькуляторToolStripMenuItem_Click);
 			// 
 			// информацияToolStripMenuItem
 			// 
@@ -98,13 +105,6 @@
 			this.обАвторахToolStripMenuItem.Text = "Об авторах";
 			this.обАвторахToolStripMenuItem.Click += new System.EventHandler(this.обАвторахToolStripMenuItem_Click);
 			// 
-			// калькуляторToolStripMenuItem
-			// 
-			this.калькуляторToolStripMenuItem.Name = "калькуляторToolStripMenuItem";
-			this.калькуляторToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-			this.калькуляторToolStripMenuItem.Text = "Калькулятор";
-			this.калькуляторToolStripMenuItem.Click += new System.EventHandler(this.калькуляторToolStripMenuItem_Click);
-			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +118,7 @@
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "Form1";
 			this.Text = "SupportBeam";
+			this.Load += new System.EventHandler(this.Form1_Load);
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
