@@ -220,7 +220,7 @@ namespace Sapr
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             Niker_class_raschet Vivid = new Niker_class_raschet();
             Vivid.P1_F = (Convert.ToInt16(TXBX_P1_F.Text));
@@ -243,9 +243,8 @@ namespace Sapr
 
             Vivid.Vektory();
 
-            MessageBox.Show(Vivid.otv);
+           // MessageBox.Show(Vivid.otv);
 
         }
-
     }
 }
