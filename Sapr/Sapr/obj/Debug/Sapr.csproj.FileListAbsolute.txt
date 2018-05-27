@@ -9,7 +9,6 @@ C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.exe
 C:\Projects\Sapr\Sapr\Sapr\obj\Debug\Sapr.pdb
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
 C:\Users\Baka\Documents\GitHub\Sapr\Sapr\Sapr\bin\Debug\Sapr.exe.config
 C:\Users\Baka\Documents\GitHub\Sapr\Sapr\Sapr\bin\Debug\Sapr.exe
 C:\Users\Baka\Documents\GitHub\Sapr\Sapr\Sapr\bin\Debug\Sapr.pdb
@@ -19,7 +18,6 @@ C:\Users\Baka\Documents\GitHub\Sapr\Sapr\Sapr\obj\Debug\Sapr.csproj.GenerateReso
 C:\Users\Baka\Documents\GitHub\Sapr\Sapr\Sapr\obj\Debug\Sapr.csproj.CoreCompileInputs.cache
 C:\Users\Baka\Documents\GitHub\Sapr\Sapr\Sapr\obj\Debug\Sapr.exe
 C:\Users\Baka\Documents\GitHub\Sapr\Sapr\Sapr\obj\Debug\Sapr.pdb
-=======
 C:\Users\PC\Documents\GitHub\Sapr\Sapr\Sapr\bin\Debug\Sapr.exe.config
 C:\Users\PC\Documents\GitHub\Sapr\Sapr\Sapr\bin\Debug\Sapr.exe
 C:\Users\PC\Documents\GitHub\Sapr\Sapr\Sapr\bin\Debug\Sapr.pdb

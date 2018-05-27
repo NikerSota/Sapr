@@ -23,10 +23,10 @@ namespace Sapr
             ff.Show();
         }
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
         
-    }
-=======
+//    }
+//=======
         private void цельПрограммыToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Суть программы ");
@@ -51,29 +51,29 @@ namespace Sapr
 		private void Form1_Load(object sender, EventArgs e)
 		{
 
-<<<<<<< HEAD
-        void Baka_graphic()
-        {
+//<<<<<<< HEAD
+//        void Baka_graphic()
+//        {
 
-            for (int i = 0; i < 50; i++)//ЦИКЛ ПОСТРОЕНИЯ ГРАФИКА НОМЕР 1(Q)
-            {
+//            for (int i = 0; i < 50; i++)//ЦИКЛ ПОСТРОЕНИЯ ГРАФИКА НОМЕР 1(Q)
+//            {
 
-                //   Graphic_Q.Series[0].Points.AddXY(i, Math.Sin(1));//ФУНКИЯ ПОСТРОЙКИ ГРАФИКА
+//                //   Graphic_Q.Series[0].Points.AddXY(i, Math.Sin(1));//ФУНКИЯ ПОСТРОЙКИ ГРАФИКА
 
-            }
+//            }
 
-            for (int i = 0; i < 50; i++)//ЦИКЛ ПОСТРОЕНИЯ ГРАФИКА НОМЕР 2(М)
-            {
+//            for (int i = 0; i < 50; i++)//ЦИКЛ ПОСТРОЕНИЯ ГРАФИКА НОМЕР 2(М)
+//            {
 
-                //   Graphic_M.Series[0].Points.AddXY(i, Math.Sin(1));//ФУНКИЯ ПОСТРОЙКИ ГРАФИКА
+//                //   Graphic_M.Series[0].Points.AddXY(i, Math.Sin(1));//ФУНКИЯ ПОСТРОЙКИ ГРАФИКА
 
-            }
+//            }
 
-        }
-    }
-=======
+//        }
+//    }
+//=======
 		}
 	}
->>>>>>> d795f940700c109423556aa04f1ed255223a86a2
->>>>>>> parent of c1fa490... Revert "Merge branch 'master' of https://github.com/NikerSota/Sapr"
+//>>>>>>> d795f940700c109423556aa04f1ed255223a86a2
+//>>>>>>> parent of c1fa490... Revert "Merge branch 'master' of https://github.com/NikerSota/Sapr"
 }
