@@ -245,7 +245,7 @@ namespace Sapr
             otvet = Vivid.otv;
             Form5 f5 = new Form5();
             f5.Show();
-            f5.richTextBox1.Text = Vivid.otv;
+           // f5.richTextBox1.Text = Vivid.otv;
         }
     }
 }
