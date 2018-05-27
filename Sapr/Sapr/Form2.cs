@@ -18,7 +18,8 @@ namespace Sapr
         }
         //public static Form2 form2 = new Form2();
 
-        public string otvet;
+        public string otvet="aersg";
+        Niker_class_raschet Vivid = new Niker_class_raschet();
         class Niker_class_raschet
         {
 
@@ -29,7 +30,7 @@ namespace Sapr
             public double P1_L = 0, P2_L = 0, M1_L = 0, M2_L = 0, Q1_L = 0, Q2_L = 0, B_L = 0; //ПОЛОЖЕНИЕ, ВВОДИТСЯ ВРУЧНУЮ
             public double Q_F, Q_L; // НАХОЖДЕНИЕ РАВНОДЕЙСТВУЮЩЕЙ НАГРУЗКИ
             public double VA, VB;  // РЕАКЦИИ ОПОР, РАСЧИТЫВАЮТСЯ В ФОРМУЛАХ
-            public string otv, VA_S_V, VB_S_V; //ОТВЕТ, ВЕКТОР А ВВЕРХ/ВНИЗБ ВЕКТОР В ВВЕРХ/ВНИЗ
+            public string otv="asf", VA_S_V, VB_S_V; //ОТВЕТ, ВЕКТОР А ВВЕРХ/ВНИЗБ ВЕКТОР В ВВЕРХ/ВНИЗ
             public bool VA_Z = false, VB_Z = false; // СТАТУС РЕАКЦИЙ (ЕСЛИ ЛОЖЬ - ВЕКТОР РЕАКЦИИ ВВЕРХ)
             
             public void P_raschet()
@@ -129,7 +130,7 @@ namespace Sapr
                 }
                 //return VA; //ВЫВОД ПОСЧИТАНОЙ РЕАКЦИИ А
             }
-            public void Vektory()
+            public string Vektory()
             {
                 VA_raschet();
 
@@ -141,6 +142,7 @@ namespace Sapr
                 // Запись ответа
                 //RAS = false;
                 //RBS = false;
+                return otv;
             }
         }
 
@@ -222,7 +224,7 @@ namespace Sapr
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Niker_class_raschet Vivid = new Niker_class_raschet();
+            
             Vivid.P1_F = (Convert.ToInt16(TXBX_P1_F.Text));
             Vivid.P2_F = (Convert.ToInt16(TXBX_P2_F.Text));
             Vivid.M1_F = (Convert.ToInt16(TXBX_M1_F.Text));
@@ -240,12 +242,11 @@ namespace Sapr
 
             Vivid.P1_U = (Convert.ToInt16(TXBX_P1_U.Text));
             Vivid.P2_U = (Convert.ToInt16(TXBX_P2_U.Text));
-
-            Vivid.Vektory();
-            otvet = Vivid.otv;
             Form5 f5 = new Form5();
+
+
+            f5.otvet = this.Vivid.Vektory();
             f5.Show();
-           // f5.richTextBox1.Text = Vivid.otv;
         }
     }
 }
