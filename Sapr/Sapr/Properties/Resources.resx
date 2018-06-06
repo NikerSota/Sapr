@@ -118,22 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="karbon-material-chernyy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karbon-material-chernyy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="моменты_нов_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\моменты_нов_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="715842e401125b9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\715842e401125b9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Нагрузка_нов_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Нагрузка_нов_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Силы_нов_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Силы_нов_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Балка_нов_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Балка_нов_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="715842e401125b9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\715842e401125b9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Без названия (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Без названия (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Нагрузка_нов_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Нагрузка_нов_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="моменты_нов_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\моменты_нов_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="karbon-material-chernyy_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karbon-material-chernyy_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

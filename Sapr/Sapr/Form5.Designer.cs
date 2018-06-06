@@ -47,7 +47,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(42, 19);
             this.label1.Name = "label1";
@@ -59,7 +59,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Sapr.Properties.Resources._715842e401125b9;
+            this.BackgroundImage = global::Sapr.Properties.Resources.karbon_material_chernyy_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(640, 215);
             this.Controls.Add(this.label1);
@@ -69,6 +69,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form5";
             this.Text = "SupportBeam - Решение";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
