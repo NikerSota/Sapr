@@ -174,7 +174,78 @@ namespace Sapr
 
             int[] arrow2 = { 10, 0, 10, 20, 10, 20, 5, 15, 10, 20, 15, 15 }; //ИНИЦИАЛИЗАЦИЯ МАССИВА ДАННЫХ ДЛЯ ЛИНИЙ
         }
+        //void Baka_graphic()
+        //{
+        //    float P1X = 2, P2X = 3, P3X = 4, Q2X = 6, B_L = 8; // ПАРАМЕТРЫ РАССТОЯНИЙ
+        //    float RAY = -0.9F, P1Y = 15F, P2Y = -10F, Q1Y = 5F, Q2Y = 5F, RBY = -10.9F;// ПАРАМЕТРЫ СИЛ 1
+        //    float L1Y = 10F, L2Y = 8.12F, L3Y = 22.19F, MY = 23.75F, R1Y = 11.87F, R2Y = 21.87F;//ПАРАМЕТРЫ СИЛ 2
+        //    int[] arrow = new int[11]; // МАССИВ ДАННЫХ, ИСПОЛЬЗУЮЩИЙСЯ ДЛЯ ВВОБДА ИНФОРМАЦИИ
+        //    Pen beamPen = new Pen(Color.Black, 2); // СОЗДАЕМ КИСТЬ, СТАВИМ ЦВЕТ
+        //    Pen grafPen = new Pen(Color.Red, 1);  // СОЗДАЕМ КИСТЬ, СТАВИМ ЦВЕТ
+        //    Pen metrPen = new Pen(Color.Gray, 1); // СОЗДАЕМ КИСТЬ, СТАВИМ ЦВЕТ
+        //    RAY *= 2; P1Y *= 2; P2Y *= 2; Q1Y *= 2; Q2Y *= 2; RBY *= 2; L1Y *= 2; L2Y *= 2; L3Y *= 2; MY *= 2; R1Y *= 2; R2Y *= 2;
+        //    P1X *= 80; P2X *= 80; P3X *= 80; Q2X *= 80; B_L *= 80;
+        //    PointF[] grafADraw = //МАССИВ ДЛЯ ПОСТРОЕНИЯ "СТРЕЛКИ" 
+        //    {
+        //     //ПЕРВЫЙ ГРАФИК
+        //    new PointF(10F, 150F), // отправная  //150F = point
+        //    new PointF(10F, 150F + RAY), // point  += ray
+        //    new PointF(10F + P1X, 150F + RAY), // point
+        //    new PointF(10F + P1X, 150F + RAY + P1Y), // point += p1y
+        //    new PointF(10F + P2X, 150F + RAY + P1Y), // point
+        //    new PointF(10F + P2X, 150F + RAY + P1Y + P2Y), // point+=p2y // do nagruz sleva
+        //    new PointF(10F + Q2X, 150F + RBY), // point +=rby // do nagruz sprava
+        //    new PointF(10F + B_L, 150F + RBY),// point
+        //    new PointF(10F + B_L, 150F) // КОНЕЧНАЯ
+        //    };
+        //    //ВТОРОЙ ГРАФИК
+        //    PointF[] grafBDraw =
+        //    {
+        //        new PointF(10F, 450F),
+        //        new PointF(10F, 450F + L1Y),
+        //        new PointF(10F + P1X, 450F + L2Y),
+        //        new PointF(10F + P2X, 450F + L3Y)
+        //    };
+        //    //ТРЕТИЙ ГРАФИК
+        //    PointF[] grafCDraw =
+        //    {
+        //        new PointF(10F + Q2X, 450F + R1Y),
+        //        new PointF(10F + Q2X, 450F + R2Y),
+        //        new PointF(10F + B_L, 450F)
+        //    };
+        //    Graphics gPanel = panel1.CreateGraphics(); //СОЗДАНИЕ ГРАФИЧЕСКОГО ИНТЕРФЕЙСЯ В ЭЛЕМЕНТЕ ПАНЕЛЬ
+        //    //ПЕРВЫЙ ГРАФИК
+        //    gPanel.DrawRectangle(beamPen, 0, 0, 700, 300); // РАМКА ГРАФИКА
+        //    gPanel.DrawLine(beamPen, 10, 10, 10, 290); // ВЕРТИКАЛЬ
+        //    gPanel.DrawLine(beamPen, 10, 150, 690, 150); // ГОРИЗОНТАЛЬ
 
+        //    gPanel.DrawLine(metrPen, 90, 0, 90, 600); // РАЗМЕТКА
+        //    gPanel.DrawLine(metrPen, 170, 0, 170, 600); // РАЗМЕТКА
+        //    gPanel.DrawLine(metrPen, 250, 0, 250, 600); // РАЗМЕТКА
+        //    gPanel.DrawLine(metrPen, 330, 0, 330, 600); // РАЗМЕТКА
+        //    gPanel.DrawLine(metrPen, 410, 0, 410, 600); // РАЗМЕТКА
+        //    gPanel.DrawLine(metrPen, 490, 0, 490, 600); // РАЗМЕТКА
+        //    gPanel.DrawLine(metrPen, 570, 0, 570, 600); // РАЗМЕТКА
+        //    gPanel.DrawLine(metrPen, 650, 0, 650, 600); // РАЗМЕТКА
+
+        //    gPanel.DrawLines(grafPen, grafADraw); // ГРАФИК A
+        //    //ВТОРОЙ ГРАФИК 1
+        //    gPanel.DrawRectangle(beamPen, 0, 300, 700, 300); // РАМКА ГРАФИКА
+        //    gPanel.DrawLine(beamPen, 10, 310, 10, 580); // ВЕРТИКАЛЬ
+        //    gPanel.DrawLine(beamPen, 10, 450, 690, 450); // ГОРИЗОНТАЛЬ
+        //    gPanel.DrawLines(grafPen, grafBDraw); // ГРАФИК B 
+        //    gPanel.DrawLines(grafPen, grafCDraw); // ГРАФИК В1
+        //    gPanel.DrawBezier(grafPen, 10F + P2X, 450F + L3Y, 350F, 460F + MY, 10F + P1X + P2X, 450F + R2Y, 10F + Q2X, 450F + R1Y); // КРИВАЯ
+
+        //    Graphics gButton = button1.CreateGraphics(); //МАКРОС ДЛЯ КНОПКИ
+        //    //label1.Text = "lox"; // ПРИСВОЕНИЕ ТЕКСТУ
+        //    //label1.Location = { }; // ПРИСВОЕНИЕ ЛОКАЦИИ                                
+        //}
+
+        //private void Form1_Load(object sender, EventArgs e)
+        //{
+
+        //}
         void Baka_graphic()
         {
 
