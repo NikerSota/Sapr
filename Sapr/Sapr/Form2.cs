@@ -140,8 +140,8 @@ namespace Sapr
                 else VA_S_V = "Вектор VA направлен вверх";
                 otv = "Вертикальная реакция опоры А = " + Math.Round(VA, 2) + ". " + VA_S_V + '\n' + "Вертикальная реакция опоры B = " + Math.Round(VB, 2) + ". " + VB_S_V;
                 // Запись ответа
-                //RAS = false;
-                //RBS = false;
+                VA_Z = false;
+                VB_Z = false;
                 return otv;
             }
         }
@@ -292,10 +292,10 @@ namespace Sapr
         {
 
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        public void Niker_Data()
         {
-            
+
+
             Vivid.P1_F = (Convert.ToInt16(TXBX_P1_F.Text));
             Vivid.P2_F = (Convert.ToInt16(TXBX_P2_F.Text));
             Vivid.M1_F = (Convert.ToInt16(TXBX_M1_F.Text));
@@ -313,11 +313,13 @@ namespace Sapr
 
             Vivid.P1_U = (Convert.ToInt16(TXBX_P1_U.Text));
             Vivid.P2_U = (Convert.ToInt16(TXBX_P2_U.Text));
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Niker_Data();
             Form5 f5 = new Form5();
-
-
             f5.otvet = this.Vivid.Vektory();
-            f5.Show();
+            f5.Show();          
         }
     }
 }
