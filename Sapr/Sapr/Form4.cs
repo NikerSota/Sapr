@@ -74,36 +74,39 @@ namespace Sapr
 
 		double a=0, b=0, c=0;
 		char single;
+		//double formula;
+		bool dat = false;
 		private void button14_Click(object sender, EventArgs e)
 		{
 				a = Convert.ToDouble(textBox1.Text);
 				single = '+';
+		//	if (dat == true)
 				textBox1.Clear();
-
 		}
 		private void button13_Click(object sender, EventArgs e)
 		{
 				a = Convert.ToDouble(textBox1.Text);
 				single = '*';
+			//if (dat == true)
 				textBox1.Clear();
 		}
-
 		private void button12_Click(object sender, EventArgs e)
 		{
 				a = Convert.ToDouble(textBox1.Text);
 				single = '-';
+			//if (dat == true)
 				textBox1.Clear();
 		}
 		private void button11_Click(object sender, EventArgs e)
 		{
-
 				a = Convert.ToDouble(textBox1.Text);
 				single = '/';
+			//if(dat==true)
 				textBox1.Clear();
 		}
 		private void button15_Click(object sender, EventArgs e)
 		{
-
+			//dat = true;
 			b = Convert.ToDouble(textBox1.Text);
 			switch (single)
 			{
@@ -117,8 +120,7 @@ namespace Sapr
 						c = a / b;
 						break;
 			}
-				textBox1.Text = c.ToString();
-			
+				textBox1.Text = c.ToString();	
 		}
 		private void button16_Click(object sender, EventArgs e)
 		{
@@ -136,6 +138,5 @@ namespace Sapr
 					textBox1.Text = textBox1.Text.Remove(0, 1);
 				else textBox1.Text = '-' + textBox1.Text;
 		}
-
 	}
 }
