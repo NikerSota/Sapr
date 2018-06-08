@@ -29,9 +29,9 @@ namespace Sapr
             public double P2_X = 0, P2_Y = 0; //УГОЛ, ВВОДИТСЯ ВРУЧНУЮ
             public double P1_L = 0, P2_L = 0, M1_L = 0, M2_L = 0, Q1_L = 0, Q2_L = 0, B_L  = 0; //ПОЛОЖЕНИЕ, ВВОДИТСЯ ВРУЧНУЮ
             public double Q_F, Q_L; // НАХОЖДЕНИЕ РАВНОДЕЙСТВУЮЩЕЙ НАГРУЗКИ
-            public double VA, VB;  // РЕАКЦИИ ОПОР, РАСЧИТЫВАЮТСЯ В ФОРМУЛАХ
-            public string otv="asf", VA_S_V, VB_S_V; //ОТВЕТ, ВЕКТОР А ВВЕРХ/ВНИЗБ ВЕКТОР В ВВЕРХ/ВНИЗ
-            public bool VA_Z = false, VB_Z = false; // СТАТУС РЕАКЦИЙ (ЕСЛИ ЛОЖЬ - ВЕКТОР РЕАКЦИИ ВВЕРХ)
+            public double VA, VB, HA;  // РЕАКЦИИ ОПОР, РАСЧИТЫВАЮТСЯ В ФОРМУЛАХ
+            public string otv="asf", VA_S_V, VB_S_V, HA_S_V; //ОТВЕТ, ВЕКТОР А ВВЕРХ/ВНИЗБ ВЕКТОР В ВВЕРХ/ВНИЗ
+            public bool VA_Z = false, VB_Z = false, HA_Z = false; // СТАТУС РЕАКЦИЙ (ЕСЛИ ЛОЖЬ - ВЕКТОР РЕАКЦИИ ВВЕРХ)
             
             public void P_raschet()
             {
@@ -130,18 +130,34 @@ namespace Sapr
                 }
                 //return VA; //ВЫВОД ПОСЧИТАНОЙ РЕАКЦИИ А
             }
-            public string Vektory()
+            public void HA_raschet()
             {
                 VA_raschet();
+                HA = P1_X + P2_X;
+                if (HA < 0)
+                {
+                    HA = -HA; // ЗНАЧЕНИЕ А ПО МОДУЛЮ
+                    HA_Z = !HA_Z; // ПОМЕНЯТЬ НАПРАВЛЕНИЕ ВЕКТОРА
+                }
+            }
+            public string Vektory()
+            {
+                HA_raschet();
 
                 if (VB_Z == true) VB_S_V = "Вектор VB направлен вниз";
                 else VB_S_V = "Вектор VB направлен вверх";
                 if (VA_Z == true) VA_S_V = "Вектор VA направлен вниз";
                 else VA_S_V = "Вектор VA направлен вверх";
-                otv = "Вертикальная реакция опоры А = " + Math.Round(VA, 2) + ". " + VA_S_V + '\n' + "Вертикальная реакция опоры B = " + Math.Round(VB, 2) + ". " + VB_S_V;
+                if (HA_Z == true) HA_S_V = "Вектор HB направлен влево";
+                else HA_S_V = "Вектор HB направлен вправо";
+
+                otv = "Вертикальная реакция опоры А = " + Math.Round(VA, 2) + ". " + VA_S_V + '\n'
+                    + "Вертикальная реакция опоры B = " + Math.Round(VB, 2) + ". " + VB_S_V + '\n'
+                    + "Горизонтальная реакция опоры А = " + Math.Round(HA, 2) + ". " + HA_S_V + '\n';
                 // Запись ответа
                 VA_Z = false;
                 VB_Z = false;
+                HA_Z = false;
                 return otv;
             }
         }
