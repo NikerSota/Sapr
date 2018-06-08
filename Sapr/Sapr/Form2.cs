@@ -292,7 +292,13 @@ namespace Sapr
         {
 
         }
+        void evgen_schet()
+        {
+            Form6 znachF6 = new Form6();
+          
 
+        }
+        
         private void button2_Click(object sender, EventArgs e)
         {
             
@@ -313,6 +319,8 @@ namespace Sapr
 
             Vivid.P1_U = (Convert.ToInt16(TXBX_P1_U.Text));
             Vivid.P2_U = (Convert.ToInt16(TXBX_P2_U.Text));
+         
+
             Form5 f5 = new Form5();
 
 
